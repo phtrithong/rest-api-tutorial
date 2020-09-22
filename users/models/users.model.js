@@ -22,6 +22,7 @@ userSchema.findById = function (cb) {
     return this.model('Users').find({id: this.id}, cb);
 };
 
+// Create a new Model
 const User = mongoose.model('Users', userSchema);
 
 
